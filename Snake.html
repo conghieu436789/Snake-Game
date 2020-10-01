@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<!--<img src="Image/fruit_snake.png" height="606" width="1079"/>-->
+<!--<img src="Image/Snake.png" height="281" width="500"/>-->
+<!--<img src="Image/caro_snake.gif" height="250" width="333"/>-->
+<!--<img src="Image/green snake.jpg" height="422" width="800"/>-->
+<!--<img src="Image/background-body.jpg" height="461" width="626"/>-->
+<style>
+    body{
+        background-image: url("Image/caro_snake.gif");
+        background-size: cover;
+    }
+</style>
+<body>
+<div style=" width: 850px; float: left">
+    <canvas id ='canvas'>
+
+    </canvas>
+</div>
+<div style=" width: 700px; float: left">
+    <input type="button" style="width: 100px; height: 50px; border-radius: 50px;
+    font-size: 20px; font-weight: bold" value="RESET" onclick="reset()">
+    <input type="button" style="width: 100px; height: 50px; border-radius: 50px;
+    font-size: 20px; font-weight: bold" value="SOUND" onclick="backgroundSound()">
+    <div STYLE="border: 5px solid blue;border-radius: 10px; width: 50%;">
+        <h1 style="text-align: center; color: red">SCOREBOARD</h1>
+        <p id ="scoreboard" style="font-family: Georgia; font-size: 30px; color: white"></p>
+    </div>
+</div>
+<div style=" width: 700px; float: left">
+<!--    <br>-->
+    <h1 style="font-size: 40px; color: orangered">INSTRUCTION</h1>
+    <ul style="font-family: Georgia; font-size: 30px; color: white">
+        <li>Use arrow buttons to start and change direction</li>
+<!--        <br>-->
+        <li>Click 'SOUND' button to play sound</li>
+<!--        <br>-->
+        <li>Click 'RESET' button to reset game</li>
+<!--        <br>-->
+        <li>The snake's speed increases when it grows</li>
+<!--        <br>-->
+        <li>Game over when the snake bites itself</li>
+    </ul>
+</div>
+
+</body>
+</html>
+<script src="snake1.js"></script>
+
